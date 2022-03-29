@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 15rem;
+    height: 32.5rem;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 8px 10px #888888;
+    border-radius: 1rem;
+    
+ }
+ .container.day{
+     background-image: url(day.jpeg.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+ .container.night{
+    background-image: url(night.jpeg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inputTemp {
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0.4;
+}
+.search_submit {
+    display: flex;
+}
+
+.search_submit > button {
+    visibility: hidden;
+}
+.search {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+.search:focus{
+    outline: none;
+}
+.inputTemp_numer {
+    display: flex;
+    align-items: center;
+}
+.inputTemp_celsius {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.inputTemp_symbol {
+    font-size: 3rem;
+    color: white;
+}
+.location{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.location_date {
+    margin: 1.5rem;
+    color: white;
+
+}
+.inputTemp_description , .location_city {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color:white;
+}
+ .container.night .inputTemp_description{
+     color: white;
+ }
+ .container.night .location_city{
+     color: white;
+ }
+ .weather {
+     flex: 0.1;
+     border-top: 2px solid white;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    
+ }
+ .weather_min >span {
+     font-size: 1.5rem;
+     color: blue;
+ }
+ .weather_max >span {
+     font-size: 1.5rem;
+     color: red;
+}
+.container.night .weather_min{
+    color: white;
+
+}
+.container.night .weather_max{
+    color: white;
+}

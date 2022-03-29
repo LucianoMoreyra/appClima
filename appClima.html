@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    
+     <title>App del clima</title>
+</head>
+<body>
+    <div class="container night " id="container">
+        <div class="inputTemp">
+             <form class="search_submit" id="search_submit">
+                  <input type="text" class="search" id="search_input" placeholder="Entra a tu localizacion ...">
+                  <button type="submit"></button>
+            </form>
+            <div class="inputTemp_number">
+                
+                <div class="inputTemp_symbol">ºC</div>
+                <div class="inputTemp_celsius" id="degreeNumber"></div>
+                
+                
+            </div>
+            <div id="weatherIcon"></div>
+            <div class="inputTemp_description" id="description">nubldo</div>
+         
+        </div>
+        <div class="location">
+            <div class="location_city" id="timezone"></div>
+            <div class="location_date" id="date"></div>
+        </div>
+        <div class="weather">
+            <div class="weather_min"><small>min</small><span id="min">12</span>ºC</div>
+            <div class="weather_max"><small>max</small><span id="max">20</span>ºC</div>
+        </div>
+        
+
+    </div> 
+    <script src="script.js"></script>
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
